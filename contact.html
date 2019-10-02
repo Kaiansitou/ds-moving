@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Less CSS style sheet -->
+    <link rel="stylesheet" type="text/css" href="/css/contact.css" />
+    <link rel="stylesheet" type="text/css" href="/css/vendor.css" />
+    <title>联系我们</title>
+</head>
+
+<body>
+    <section class="home-page">
+        <!-- Top -->
+        <div class="top-container">
+            <div class="background-image">
+                <div class="top-container-bar">
+                    <div class="top-left">
+                        <img src="/images/logo.png">
+                        <a href="http://localhost:4000">大圣搬家</a>
+                    </div>
+                    <div class="top-right">
+                        <a href="http://localhost:4000">首页</a>
+                        <a href="http://localhost:4000/about">有关我们</a>
+                        <a href="http://localhost:4000/service">服务介绍</a>
+                        <a href="http://localhost:4000/contact">联系我们</a>
+                        <a href="http://localhost:4000/quote">获取报价</a>
+                        <select>
+                            <option> 简体中文</option>
+                            <option>英文</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="top-container-content">
+                    <h1>报价请电话或微信咨询。</h1>
+                    <button class="price-button"> 获取报价</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile-Header -->
+        <div class="mobile-header" style="display:none">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="http://localhost:4000">首页</a>
+                    <a href="http://localhost:4000/about">有关我们</a>
+                    <a href="http://localhost:4000/service">服务介绍</a>
+                    <a href="http://localhost:4000/contact">联系我们</a>
+                    <a href="http://localhost:4000/quote">获取报价</a>
+
+                    <div class="mobile-menu-footer">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#" style="padding-left:40px">© 2019 Wishare Media Group</a>
+                    </div>
+                </div>
+            </div>
+            <span style="font-size:30px;cursor:pointer;position:absolute;top:0;right:0;padding:20px;color:white;"
+                onclick="openNav()">&#9776;</span>
+        </div>
+
+        <!-- Map Container -->
+        <div class="map-container">
+            <img src="/images/googleMap.png" alt="">
+            <div class="contact-info">
+                <div class="contact-info-left">
+                    <h2>联系我们</h2>
+                    <div class="temp">
+                        <div class="contact-address">
+                            <span class="address-title">地址: </span>
+                            <div class="address">
+                                <span>415 S 7th. Ave,</span>
+                                <br>
+                                <span>City of Industry, CA 91746</span>
+                            </div>
+                        </div>
+
+                        <span>电话: 626-566-6868</span>
+                        <span>Email: info@wilsonmoving.com</span>
+                    </div>
+                    <h2>营业时间</h2>
+                    <span class="contact-hour">每日24小时不休</span>
+                </div>
+                <div class="contact-info-right">
+                    <h2>扫一扫</h2>
+                    <img src="/images/scan.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Before Footer -->
+        <div class="before-footer">
+            <div class="before-footer-background">
+                <div class="before-footer-content">
+                    <h2>一次性解决您车的烦恼，人的烦恼，全程服务。</h2>
+                    <button class="price-button">获取报价</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-box">
+                <div class="temp">
+                    <div class="footer-left">
+                        <h2>网站导航</h2>
+                    </div>
+
+                    <div class="footer-right footer-link">
+                        <a href="http://localhost:4000">首页</a>
+                        <a href="http://localhost:4000/about">有关我们</a>
+                        <a href="http://localhost:4000/service">服务介绍</a>
+                        <a href="http://localhost:4000/contact">联系我们</a>
+                        <a href="http://localhost:4000/quote">获取报价</a>
+                    </div>
+
+                    <div class="mobile-collapse" style="display:none;">
+                        <button class="collapsible">+</button>
+                        <div class="content">
+                            <a href="http://localhost:4000">首页</a>
+                            <a href="http://localhost:4000/about">有关我们</a>
+                            <a href="http://localhost:4000/service">服务介绍</a>
+                            <a href="http://localhost:4000/contact">联系我们</a>
+                            <a href="http://localhost:4000/quote">获取报价</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="temp" style="margin-top:auto;">
+                    <div class="footer-left">
+                        <h2>语言设定</h2>
+                    </div>
+                    <div class="footer-right" style="margin:10px 0;">
+                        <select>
+                            <option>简体中文</option>
+                            <option>英文</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-box">
+                <div class="temp">
+                    <div class="footer-left">
+                        <h2>大圣搬家</h2>
+                    </div>
+                    <div class="footer-right">
+                        <div class="footer-right-content">
+                            <img src="/images/location.png" alt="">
+                            <div class="footer-address">
+                                <span style="width:20px">415 S 7th. Ave,</span><br>
+                                <span style="width:140px">City of Industry, CA 91746</span>
+                            </div>
+                        </div>
+
+                        <div class="footer-right-content">
+                            <img src="/images/phone.png" alt="">
+                            <span>626-566-6868</span>
+                        </div>
+
+                        <div class="footer-right-content">
+                            <img src="/images/email.png" alt="">
+                            <span>info@wilsonmoving.com</span>
+                        </div>
+
+                        <div class="footer-right-content">
+                            <img src="/images/web.png" alt="">
+                            <span>www.dasheng.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="temp" style="margin-top:auto;">
+                    <div class="footer-left">
+                        <h2>营业时间</h2>
+                    </div>
+                    <div class="footer-right">
+                        <span style="padding-top:5px;">每日24小时不休</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-box">
+                <div class="temp temp-logo">
+                    <img class="logo" src="/images/fb.png" alt="">
+                    <img class="logo" src="/images/sns.png" alt="">
+                    <img class="logo" src="/images/yelp.png" alt="">
+                </div>
+                <div class="temp temp-copyright" style="margin-top:auto;">
+                    <span>Copyright © 2019 Wilson Moving LLC.</span>
+                </div>
+                <div class="mobile-copyright" style="display:none;">
+                    <div class="copyright-detail">
+                        <span>Copyright © </span>
+                        <span>2019 Wilson Moving LLC.</span>
+                        <span>All Rights Reserved</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+
+</html>

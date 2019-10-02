@@ -1,0 +1,251 @@
+@import "mixins.less";
+@import "variables.less";
+
+// Top Container
+
+.top-container{
+    .background-image{
+        background-image: url("/images/contact-bg.png");
+        .background-image-function;
+        height:400px;
+    }
+    .top-container-bar{
+        display:flex;
+        padding:15px 50px;
+        height:40px;
+        .top-left{
+            width:200px;
+            display:flex;
+            img{
+                width:50px;
+                height:40px;
+            }
+            a{
+                color:white;
+                font-size:25px;
+                padding:5px;
+                text-decoration: none;
+            }
+        }
+        .top-right{
+            margin-left:auto;
+            margin-top:auto;
+            a{
+                color:white;
+                text-decoration: none;
+                padding:40px 15px;
+                font-size:20px;
+            }
+        }
+    }
+    .top-container-content{
+        color:white;
+        text-align: center;
+        height:300px;
+        font-size:1.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        
+        .price-button{
+            .price-button-function;
+        }
+    }
+}
+
+//Map Container
+.map-container{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:auto;
+    width:50%;
+    img{
+        width:600px;
+        height:300px;
+        padding:50px 0;
+    }
+    .contact-info{
+        display:flex;
+        margin:auto;
+        width:600px;
+        .contact-info-left{
+            display:flex;
+            flex-direction: column;
+            line-height:40px;
+            padding:0 60px;
+            h2{
+                color:#0C4147;
+            }
+            span{
+                color:#47270F;
+            }
+            .contact-address{
+                display:flex;
+                .address{   
+                    padding-left:5px;
+                }
+            }
+            .temp{
+                display:flex;
+                flex-direction: column;
+            }
+        }
+        .contact-info-right{
+            h2{
+                color:#0C4147;
+            }
+            img{
+                width:150px;
+                height:150px;
+            }
+        }
+    }
+}
+
+// Before Footer
+
+.before-footer{
+    .before-footer-background{
+        background-image: url("/images/contact-before-footer.png");
+        .background-image-function;
+        height:300px;
+        .before-footer-content{
+            text-align: center;
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            height:300px;
+            h2{
+                color:white;
+            }
+            .price-button{
+                .price-button-function;
+            }
+        }
+    }
+}
+
+// Footer
+
+.footer{
+    background-color:#378994;
+    color:white;
+    display:flex;
+    justify-content: space-around;
+    padding:50px 0;
+    .footer-box{
+        display:flex;
+        flex-direction: column;
+        .temp{
+            display:flex;
+        .footer-right{
+            display:flex;
+            flex-direction: column;
+            padding: 0 30px;
+            .footer-right-content{
+                padding:5px 0;
+                display:flex;
+                img{
+                    width:15px;
+                    height:15px;
+                    color:white;
+                    padding-right:10px;
+                }
+            }
+            a{
+                text-decoration: none;
+                color:white;
+                padding:5px 0;
+            }
+        }
+    }
+        .logo{
+            width:20px;
+            height:20px;
+            margin:0 20px 0 0;
+            color:white;
+        }
+    }
+
+}
+// Mobile Style
+
+@media only screen and (max-width : 414px) {
+
+//Mobile Top Container
+    .top-container{
+        .mobile-top-container;
+        .background-image{
+            height:400px !important;
+        }
+    }
+
+//Mobile Header Container
+.mobile-header {
+    .mobile-header-menu;
+}
+
+//Mobile Map Container
+    .map-container{
+        width:100%;
+        img{
+            width:400px;
+            height:200px;
+            margin:auto;
+        }
+        .contact-info{
+            display:flex;
+            flex-direction: column;
+            width:100%;
+            .contact-info-left{
+                padding:0 30px !important;
+                h2{
+                    text-align: center;
+                    font-size: 3em;
+                    padding:20px 0;
+                }
+                .contact-address{
+                    .address-title{
+                        width:60px;
+                    }
+                    .address{
+                        width:300px;
+                    }
+                }
+                .span{
+                    width:100%;
+                }
+                .temp{
+                    display:flex;
+                    flex-direction: column;
+                    font-size:20px;
+                    width:300px;
+                    position: relative;
+                    left:50px;
+                }
+                .contact-hour{
+                    text-align: center;
+                }
+
+            }
+            .contact-info-right{
+                width:200px;
+                text-align: center;
+                margin:auto;
+            }
+        }
+    }
+//Before Footer
+    .before-footer{
+        h2{
+            width:280px;
+        }
+    }
+//Mobile Footer
+    .footer{
+        .mobile-footer;
+    } 
+}
